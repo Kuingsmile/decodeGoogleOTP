@@ -4,7 +4,18 @@ This is a cli tool to decode one time password (OTP) secrets from QR codes expor
 
 ## How to use
 
-Just download the binary from the [release page](https://github.com/kuingsmile/decodeGoogleOTP/releases) and run it in your terminal.
+### Export QR codes from Google Authenticator
+
+1. Open Google Authenticator app on your phone.
+2. Tap on the three dots in the top right corner.
+3. Tap on "Transfer accounts".
+4. Select the accounts you want to export.
+5. Tap on "Export accounts".
+6. Save the QR codes as images.
+
+### Decode QR codes
+
+Download the binary from the [release page](https://github.com/kuingsmile/decodeGoogleOTP/releases) and run it in your terminal.
 
 ```shell
 $ decodeGoogleOTP -i <input file> -c <csv file path>
