@@ -94,7 +94,7 @@ jobs:
     - name: Get tags
       run: |
         echo "CURRENTVERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
-        git fetch --tags
+        git fetch --tags --force
         echo "PREVERSION=$(git describe --tags --abbrev=0 HEAD^)" >> $GITHUB_ENV
 
     - name: Generate release notes
